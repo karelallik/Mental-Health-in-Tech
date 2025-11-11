@@ -4,7 +4,7 @@
 Survey dataset on Mental Health in the Tech Workplace in 2014, 2016 - 2019 [1] 
 
 ### Goal 1:
-Expand the current dataset with additional data from the years 2020-2024 [2]
+Expand the current dataset with additional data from the years 2020-2023 [2]
 
 ### Goal 2: 
 Predict whether a respondent has a mental health disorder (Random Forest / Deep Learning with Sentence-BERT)
