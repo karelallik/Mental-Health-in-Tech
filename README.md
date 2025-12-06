@@ -14,4 +14,51 @@ Predict whether a respondent has a mental health disorder (Random Forest / Deep 
 
 ### Links:
 [1] https://www.kaggle.com/datasets/anth7310/mental-health-in-the-tech-industry/data <br>
-[2] https://osmhhelp.org/research.html
+[2] https://osmhhelp.org/research.html<br>
+<br>
+<br>
+## Repository Structure
+
+This repository is organized to make it easy to explore the data, reproduce our analyses, and run the models used in the project.   
+The main components are:  
+- `data/`
+   - `raw/`
+     Contains the original data files:
+     - the Kaggle SQLite database (2016–2019),
+     - individual csv files for 2020-2023,
+     - a test dataset for Goal 2,
+     - and the unprocessed Kaggle CSV file.
+  - `processed/`
+     - Contains the cleaned and combined dataset used for analysis.
+- `notebooks/`
+    Includes Jupyter notebooks for:
+    - loading Kaggle data from SQLite,
+    - cleaning and combining datasets,
+    - Goal 2 (mental health disorder prediction),
+    - Goal 3 (language classification: stigmatizing vs supportive).
+    
+
+<br>
+<br>
+
+## To replicate our analysis:
+
+**1. Clone the repository.**  
+`git clone https://github.com/karelallik/Mental-Health-in-Tech.git`
+
+**2. Load Kaggle data from SQLite**  
+Open the notebook `load_kaggle_data.ipynb` and run all cells.  
+This will convert the Kaggle SQLite data (2016–2019) into a raw CSV file.
+
+**3. Clean and combine the datasets**  
+Open the notebook `data_cleaning.ipynb` and run all cells.  
+This notebook cleans the datasets and merges the 2016–2019 data with the 2020–2023 data.
+
+**4. Run Goal 2: Mental health disorder prediction**  
+Open the notebook `goal2_predict_mental_health_disorder.ipynb`.   
+Install the following packages in the first cell. Then run the rest of the cells to reproduce the prediction results. 
+
+**5. Run Goal 3: Language classification (stigmatizing vs supportive)**  
+Open the notebook `goal3....ipynb`.  
+Install the following packages in the first cell.  
+Run all cells to train the RoBERTa classifier and reproduce the yearly analysis.
