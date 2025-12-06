@@ -1,4 +1,5 @@
 # Mental-Health-in-Tech
+Since tech industries continue to shape the future of work and society, it is important to take note of the mental health of the people working in the industry.  It is widely known that working in tech often involves long hours, high cognitive loads, and remote work. Thus, it is critical to understand the well-being of the workforce. These factors can contribute to burnout, anxiety, and the development of mental health disorders. By analyzing this data and expanding it, we can provide insight into mental health trends and additionally identify the factors that strongly correlate with mental health disorders. 
 
 ### Dataset 1 (5.89 MB): 
 Survey dataset on Mental Health in the Tech Workplace in 2014, 2016 - 2019 [1] 
