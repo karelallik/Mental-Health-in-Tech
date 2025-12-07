@@ -14,7 +14,7 @@ Since tech industries continue to shape the future of work and society, it is im
 - GOAL1: Expand the Kaggle dataset (Mental Health in the Tech Workplace in 2014, 2016 - 2019 [1]) with additional data from the years 2020-2023 [2]
 - GOAL2: Predict whether a respondent has a mental health disorder (Random Forest / Gradient Boosting / Kernel SVM / Deep Learning with Sentence-BERT)
 - GOAL3: Build a classifier that detects stigmatizing vs supportive language in text answers (RoBERTa) and analyse the result on a yearly basis.
-<br>
+
 
 ## Repository Structure
 The main components are:  
@@ -38,9 +38,6 @@ The main components are:
    Includes pdf-files containing graphs.
 - `models/`
    Contains our pretrained model for stigmatizing or supportive language predictions.
-
-<br>
-<br>
 
 ## To replicate our analysis:
 
