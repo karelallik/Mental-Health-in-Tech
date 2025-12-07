@@ -35,9 +35,7 @@ The main components are:
     - Goal 2 (mental health disorder prediction),
     - Goal 3 (language classification: stigmatizing vs supportive).
 - `figures/`
-   Includes pdf-files containing graphs.
-- `models/`
-   Contains our pretrained model for stigmatizing or supportive language predictions.
+   Contains PDF files featuring graphs
 
 ## To replicate our analysis:
 
