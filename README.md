@@ -23,9 +23,9 @@ The main components are:
      Contains original unprocessed files:
      - the Kaggle SQLite database (2016–2019),
      - individual csv files for 2020-2023,
-     - and more
+     - and more.
   - `intermediate/`
-    Contains intermediate files that are used to save intermediate results  
+    Contains files that are used to save intermediate results.  
   - `processed/`
     Contains the cleaned and combined dataset used for analysis and stigmatizing or supportive language predictions.
 - `notebooks/`
