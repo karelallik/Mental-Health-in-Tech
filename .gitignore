@@ -1,2 +1,4 @@
 .idea
 notebooks/.ipynb_checkpoints/
+notebooks/roberta_stigma
+models/roberta_stigma_v1
