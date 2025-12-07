@@ -15,6 +15,14 @@ Since tech industries continue to shape the future of work and society, it is im
 - GOAL2: Predict whether a respondent has a mental health disorder (Random Forest / Gradient Boosting / Kernel SVM / Deep Learning with Sentence-BERT)
 - GOAL3: Build a classifier that detects stigmatizing vs supportive language in text answers (RoBERTa) and analyse the result on a yearly basis.
 
+## Results
+- Best prediction model was Random Forest, AUC 0.927.
+- Embeddings didn’t improve performance.
+- Top predictors were past disorders, age, family and workplace attitude.
+- RoBERTa-based classifier successfully distinguished supportive vs stigmatizing text
+- The model enabled year-by-year analysis of public attitudes in tech.
+- Supportive language consistently dominated (~70-90% across years).
+- Identified words associated with stigmatizing language.
 
 ## Repository Structure
 The main components are:  
