@@ -1,50 +1,43 @@
-# Mental-Health-in-Tech
+# Mental Health in Tech
+### Group D9. Hendrik Jaks, Robin Juul, Karel Allik
+<br>
+
+## Motivation
 Since tech industries continue to shape the future of work and society, it is important to take note of the mental health of the people working in the industry.  It is widely known that working in tech often involves long hours, high cognitive loads, and remote work. Thus, it is critical to understand the well-being of the workforce. These factors can contribute to burnout, anxiety, and the development of mental health disorders. By analyzing this data and expanding it, we can provide insight into mental health trends and additionally identify the factors that strongly correlate with mental health disorders. 
 
-### Dataset 1 (5.89 MB): 
-Survey dataset on Mental Health in the Tech Workplace in 2014, 2016 - 2019 [1] 
+## Business Goals
+- Raise awareness of mental health in the tech industry.
+- Help identify risk factors and reduce stigma surrounding mental health.
+- Track long-term trends in mental health in the tech industry.
 
-### Goal 1:
-Expand the current dataset with additional data from the years 2020-2023 [2]
+## Data Mining Goals  
+- GOAL1: Expand the Kaggle dataset (Mental Health in the Tech Workplace in 2014, 2016 - 2019 [1]) with additional data from the years 2020-2023 [2]
+- GOAL2: Predict whether a respondent has a mental health disorder (Random Forest / Gradient Boosting / Kernel SVM / Deep Learning with Sentence-BERT)
+- GOAL3: Build a classifier that detects stigmatizing vs supportive language in text answers (RoBERTa) and analyse the result on a yearly basis.
 
-### Goal 2: 
-Predict whether a respondent has a mental health disorder (Random Forest / Deep Learning with Sentence-BERT)
 
-### Goal 3: 
- Build a classifier that detects stigmatizing vs supportive language in text answers (RoBERTa) and analyse the result on a yearly basis.
-
-### Links:
-[1] https://www.kaggle.com/datasets/anth7310/mental-health-in-the-tech-industry/data <br>
-[2] https://osmhhelp.org/research.html<br>
-<br>
-<br>
 ## Repository Structure
-
-This repository is organized to make it easy to explore the data, reproduce our analyses, and run the models used in the project.   
 The main components are:  
 - `data/`
    - `raw/`
-     Contains the original data files:
+     Contains original unprocessed files:
      - the Kaggle SQLite database (2016–2019),
      - individual csv files for 2020-2023,
-     - a test dataset for Goal 2,
-     - and the unprocessed Kaggle CSV file.
+     - and more
+  - `intermediate/`
+    Contains intermediate files that are used to save intermediate results  
   - `processed/`
-     - Contains the cleaned and combined dataset used for analysis.
-     - `goal3/`
-       - Contains cleaned and combined datasets for goal 3 analysis.
+    Contains the cleaned and combined dataset used for analysis and stigmatizing or supportive language predictions.
 - `notebooks/`
     Includes Jupyter notebooks for:
     - loading Kaggle data from SQLite,
-    - cleaning and combining datasets,
+    - Goal 1 (cleaning and combining datasets),
     - Goal 2 (mental health disorder prediction),
     - Goal 3 (language classification: stigmatizing vs supportive).
 - `figures/`
-   Includes pdf-file containing graph.
-    
-
-<br>
-<br>
+   Includes pdf-files containing graphs.
+- `models/`
+   Contains our pretrained model for stigmatizing or supportive language predictions.
 
 ## To replicate our analysis:
 
@@ -55,7 +48,7 @@ The main components are:
 Open the notebook `load_kaggle_data.ipynb` and run all cells.  
 This will convert the Kaggle SQLite data (2016–2019) into a raw CSV file.
 
-**3. Clean and combine the datasets**  
+**3. Run Goal 1: Clean and combine the datasets**  
 Open the notebook `data_cleaning.ipynb` and run all cells.  
 This notebook cleans the datasets and merges the 2016–2019 data with the 2020–2023 data.
 
@@ -69,3 +62,7 @@ Install the following packages in the first cell.
 Run all cells to train the RoBERTa classifier and reproduce the yearly analysis.
 NB! If You want to use the Gemini-labeling, your own API key must be used (paste in place of `YOUR_API_KEY`).
 
+
+### Links:
+[1] https://www.kaggle.com/datasets/anth7310/mental-health-in-the-tech-industry/data <br>
+[2] https://osmhhelp.org/research.html<br>
