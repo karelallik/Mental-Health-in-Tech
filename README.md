@@ -31,12 +31,16 @@ The main components are:
      - and the unprocessed Kaggle CSV file.
   - `processed/`
      - Contains the cleaned and combined dataset used for analysis.
+     - `goal3/`
+       - Contains cleaned and combined datasets for goal 3 analysis.
 - `notebooks/`
     Includes Jupyter notebooks for:
     - loading Kaggle data from SQLite,
     - cleaning and combining datasets,
     - Goal 2 (mental health disorder prediction),
     - Goal 3 (language classification: stigmatizing vs supportive).
+- `figures/`
+   Includes pdf-file containing graph.
     
 
 <br>
@@ -63,3 +67,5 @@ Install the following packages in the first cell. Then run the rest of the cells
 Open the notebook `goal3....ipynb`.  
 Install the following packages in the first cell.  
 Run all cells to train the RoBERTa classifier and reproduce the yearly analysis.
+NB! If You want to use the Gemini-labeling, your own API key must be used (paste in place of `YOUR_API_KEY`).
+
